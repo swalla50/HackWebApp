@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace HackWebApp.Models
 {
-    public class GetHierarchyModel
+    public class GetBuildingsModel
     {
         [Key]
-        public string Hierarchy { get; set; }
+        public int BuildingID { get; set; }
+        public string BuildingName { get; set; }
+        public int BuildingHierarchy { get; set; }
     }
 }

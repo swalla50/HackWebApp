@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace HackWebApp.Models
 {
-    public class GetHierarchyModel
+    public class CompanyModel
     {
         [Key]
-        public string Hierarchy { get; set; }
+        public int CompanyID { get; set; }
+        public string CompanyName { get; set; }
     }
 }

@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace HackWebApp.Models
 {
-    public class GetHierarchyModel
+    public class DeleteReminderModel
     {
         [Key]
-        public string Hierarchy { get; set; }
+        public int TickleID { get; set; }
+        public bool isDeleted { get; set; }
     }
 }

@@ -16,7 +16,7 @@ namespace HackWebApp.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<GetHierarchyModel>().ToTable("vwCompanyHierarchy");
+            modelBuilder.Entity<GetHierarchyModel>().ToTable("vwHierarchyList");
         }
     }
 }
