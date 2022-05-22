@@ -7,6 +7,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using System;
+using Swashbuckle;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -65,6 +66,8 @@ namespace HackWebApp
             options.UseSqlServer(Configuration.GetConnectionString("DeleteReminder")));
             services.AddDbContext<GetLeaseRemindersContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("LeaseReminders")));
+            services.AddDbContext<AddReminderContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("AddReminder")));
         }
         
 
